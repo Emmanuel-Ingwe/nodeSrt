@@ -1,6 +1,12 @@
-const person = {
-    name: 'john Doe',
-    age: '65'
-};
+class person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
 
-module.exports = person;
+    greeting() {
+        console.log(`my name is ${this.name} and I am ${this.age}`);
+    }
+}
+
+module.exports = Person;
